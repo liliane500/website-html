@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>lily company ltd</h2><br>
+             <p>curency exchange platform</p>
+
+            <div class="color">
+            </div>
+
+            <div class="color color-2">
+                <div class="curency">
+                    <div class="flexrow">
+                        <div class="currency_convert">
+                            <label for="amount">AMOUNT:</label>
+                            <input type="number" name="amount" min="0" id="amount">
+                        </div>                                
+                        <div class="curency_convert">
+                            <label for="curency from">FROM:</label>
+                            <select id="curency from" name="curency to">
+                                <option value="RWF"selected>RWANDAN FANCS</option>
+                                <option value="UGX"selected>UGANDA SHILLINGS</option>
+                                <option value="KES"selected>KENYA SHILLINGS</option>
+                                <option value="TZS"selected>TANZANIA SHILLINGS</option>
+                                <option value="ETB"selected>ETHIOPIA BIRR</option>
+
+                                <outgroup label="global majors">
+                                    <option value="USD"selected>US DOLLAR</option>
+                                <option value="EUR"selected>EUROPEAN</option>
+                                <option value="GBP"selected>BRITISH POUND</option>
+                                <option value="JPY"selected>JPY- JAPANES YAN</option>
+
+                                </outgroup>
+                                
+                            </select>
+                        </div>
+
+                        <div class="curency_convert">
+                            <label for="curency to">TO:</label>
+                            <select id="currency to" name="curency to">
+                                <option value="RWF"selected>RWANDAN FANCS</option>
+                                <option value="UGX"selected>UGANDA SHILLINGS</option>
+                                <option value="KES"selected>KENYA SHILLINGS</option>
+                                <option value="TZS"selected>TANZANIA SHILLINGS</option>
+                                <option value="ETB"selected>ETHIOPIA BIRR</option>
+
+                                <outgroup label="global majors">
+                                    <option value="USD"selected>US DOLLAR</option>
+                                <option value="EUR"selected>EUROPEAN</option>
+                                <option value="GBP"selected>BRITISH POUND</option>
+                                <option value="JPY"selected>JPY- JAPANES YAN</option>
+                            </select>
+                        </div>
+
+                        <div class="exchange">
+                            <button onclick="exchange(event)">CONVERT</button>
+                            <div class="output">
+                                <label for="amount converted">RESULT:</label>
+                                <p id="money converted"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="login.html">login</a>
+            
+        
+        
+    </body>
+</html>
